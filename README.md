@@ -14,7 +14,38 @@ It reads the local Codex Desktop auth file at runtime, calls the same ChatGPT ba
 
 This is an unofficial tool that relies on an internal/undocumented Codex Desktop endpoint. It may break if OpenAI changes the app or backend API.
 
+## Quick Start
+
+Run it directly with `npx`:
+
+```bash
+npx --yes codex-resets credits summary
+```
+
+Other common commands:
+
+```bash
+npx --yes codex-resets doctor
+npx --yes codex-resets credits list
+npx --yes codex-resets --json credits summary
+```
+
+If the npm package is still propagating, you can run the GitHub version directly:
+
+```bash
+npx --yes github:sourav-bhar/codex-resets credits summary
+```
+
 ## Install
+
+To install it globally:
+
+```bash
+npm install -g codex-resets
+codex-resets credits summary
+```
+
+To install from a local checkout:
 
 ```bash
 git clone https://github.com/sourav-bhar/codex-resets.git
@@ -22,9 +53,7 @@ cd codex-resets
 make install-local
 ```
 
-This installs `codex-resets` to `~/.local/bin`. Make sure `~/.local/bin` is on your `PATH`.
-
-This package is not published to npm. Install from the GitHub repository unless a future release explicitly documents an official package.
+The local checkout installer copies `codex-resets` to `~/.local/bin`. Make sure `~/.local/bin` is on your `PATH`.
 
 ## Usage
 

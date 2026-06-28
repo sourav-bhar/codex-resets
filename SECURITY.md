@@ -13,5 +13,3 @@ Do not include bearer tokens, cookies, full `~/.codex/auth.json` contents, accou
 ## Security Design
 
 `codex-resets` reads your local Codex Desktop auth file and sends the bearer token only to allowlisted HTTPS OpenAI hosts. The CLI does not store tokens, does not write auth files, and does not include reset-credit redemption commands.
-
-The package is intentionally marked private until an official npm package is claimed and published by the maintainer.

@@ -3,14 +3,25 @@
   "version": "0.1.0",
   "description": "Check Codex Desktop reset credit expirations from the command line.",
   "license": "MIT",
-  "private": true,
   "type": "commonjs",
   "bin": {
-    "codex-resets": "./bin/codex-resets.js"
+    "codex-resets": "bin/codex-resets.js"
   },
   "scripts": {
     "check": "node --check bin/codex-resets.js && node --test",
+    "prepublishOnly": "npm run check",
     "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourav-bhar/codex-resets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sourav-bhar/codex-resets/issues"
+  },
+  "homepage": "https://github.com/sourav-bhar/codex-resets#readme",
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "codex",
