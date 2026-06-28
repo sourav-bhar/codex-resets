@@ -1,0 +1,30 @@
+{
+  "name": "codex-resets",
+  "version": "0.1.0",
+  "description": "Check Codex Desktop reset credit expirations from the command line.",
+  "license": "MIT",
+  "private": true,
+  "type": "commonjs",
+  "bin": {
+    "codex-resets": "./bin/codex-resets.js"
+  },
+  "scripts": {
+    "check": "node --check bin/codex-resets.js && node --test",
+    "test": "node --test"
+  },
+  "keywords": [
+    "codex",
+    "openai",
+    "cli",
+    "rate-limit",
+    "developer-tools"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ]
+}
